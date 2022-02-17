@@ -32,7 +32,7 @@ const About = () => {
                     </div>
                 </article>
                 <article className={styles.aboutInfo}>
-                    <h4>Mimi Craciones</h4>
+                    <h4>Mimi Creaciones</h4>
                         <p>Hola! soy Mimi, mamá de Belén, Rosalía y Ezequiel y mi perrita Lisa. 
                             En mis tiempos libres me gusta dedicarme a las manualidades y los tejidos.
                             También doy clases de tejidos por la zona de Ituzaingó, provincia de Buenos Aires.
