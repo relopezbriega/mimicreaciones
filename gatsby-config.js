@@ -10,7 +10,7 @@ module.exports = {
     description: "Tejidos artesanales de Mimi Creaciones.",
     author: "Raul E. Lopez Briega",
     twitterUsername: "@relopezbriega",
-    siteUrl:'https://mimicreaciones.com'
+    siteUrl:'https://mimicreaciones.netlify.app'
   },
   plugins: [
     {
@@ -19,6 +19,12 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images/`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-Z87X0H33GJ",
+      }
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
