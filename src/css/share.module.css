@@ -1,0 +1,6 @@
+.ShareButton {
+    margin-right: 1rem;
+}
+.ShareButton a svg:hover rect {
+    fill: var(--primary-color) !important;
+}
