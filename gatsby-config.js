@@ -21,9 +21,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-Z87X0H33GJ",
+        trackingIds: ["G-Z87X0H33GJ"
+      ]
       }
     },
     `gatsby-plugin-sitemap`,
