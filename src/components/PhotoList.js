@@ -22,7 +22,10 @@ query {
 
 const getPhotos = graphql`
 query {
-	photos: allFile(filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  relativeDirectory: {ne: "assets"}}) {
+	photos: allFile(
+        sort: {fields: ctime, order: DESC}
+        filter:{extension:{regex:"/(jpeg|jpg|gif|png)/"},  relativeDirectory: {ne: "assets"}}) 
+        {
         edges {
           node {
             childImageSharp {
@@ -30,6 +33,8 @@ query {
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
+            relativePath
+            relativeDirectory
           }
         }
       }

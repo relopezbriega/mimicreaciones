@@ -18,6 +18,7 @@ const PhotoCard = ({ photo }) => {
                 <AniLink fade className={styles.link} to={imgUrl}>Abrir</AniLink>
             </div>
             <div>
+                {/* <p>{photo.relativePath}</p> */}
           <ShareButtons title="Mimi Creaciones" url={imgUrl} />
             </div>
         </article>
