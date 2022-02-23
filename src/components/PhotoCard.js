@@ -9,6 +9,7 @@ const PhotoCard = ({ photo }) => {
     //const { images } = photo;
     let mainImage = photo.childImageSharp.fluid;
     let imgUrl = config.siteMetadata.siteUrl+mainImage.src
+    const imgtitle = photo.relativePath.split(".")[0]
 
     return (
         <article className={styles.place}>
@@ -17,8 +18,8 @@ const PhotoCard = ({ photo }) => {
                 {/* <AniLink fade className={styles.link} to={`/trabajos/${slug}`}>open</AniLink> */}
                 <AniLink fade className={styles.link} to={imgUrl}>Abrir</AniLink>
             </div>
-            <div>
-                {/* <p>{photo.relativePath}</p> */}
+            <div className={styles.footer}>
+                <h3>{imgtitle}</h3>
           <ShareButtons title="Mimi Creaciones" url={imgUrl} />
             </div>
         </article>
